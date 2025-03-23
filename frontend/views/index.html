@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DermaHeaven</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/frontend/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="login.html">Login/Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to DermaHeaven</h1>
+            <p>Your one-stop shop for quality skincare products</p>
+            <a href="#products" class="btn btn-primary">Shop Products</a>
+        </div>
+    </header>
+
+    <div class="container-fluid px-0">
+        <div class="discount-container-box">
+            <div class="discount-container">
+                <div class="discount-box"><span>  </span> Sign up for 10% discount!<span>  </span> Sign up for 10% discount!<span>  </span> Sign up for 10% discount!<span>  </span> Sign up for 10% discount!<span>  </span> Sign up for 10% discount!<span> </span> Sign up for 10% discount!</span><span>  </span> Sign up for 10% discount!<span></span>  </span> Sign up for <span></span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Products Section -->
+    <section id="products" class="container my-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/frontend/static/images/moistcreaam (2).jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Moisturizing Cream</h5>
+                        <p class="card-text">Keeps your skin hydrated and smooth.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">View</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/frontend/static/images/vitaminc.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Vitamin C Serum</h5>
+                        <p class="card-text">Brightens and rejuvenates skin.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">View</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/frontend/static/images/sunskren.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunscreen SPF 50</h5>
+                        <p class="card-text">Protects against harmful UV rays.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal3">View</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/frontend/static/images/antiage.jpg" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Anti-Aging Cream</h5>
+                        <p class="card-text">Reduces wrinkles and fine lines.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal4">View</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/frontend/static/images/acne.jpg" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Acne Treatment Gel</h5>
+                        <p class="card-text">Fights acne and reduces breakouts.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal5">View</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/frontend/static/images/mask.jpg" class="card-img-top" alt="Product 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Hydrating Face Mask</h5>
+                        <p class="card-text">Deeply nourishes and hydrates your skin.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal6">View</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/frontend/static/images/oil.jpg" class="card-img-top" alt="Product 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Nourishing Oil</h5>
+                        <p class="card-text">Restores moisture and smooths the skin.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal7">View</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/frontend/static/images/scruub.jpg" class="card-img-top" alt="Product 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Exfoliating Scrub</h5>
+                        <p class="card-text">Removes dead skin cells and smooths skin.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal8">View</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/frontend/static/images/brightening.jpg" class="card-img-top" alt="Product 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Brightening Face Cream</h5>
+                        <p class="card-text">Enhances radiance and evens out skin tone.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal9">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container benefits-container">
+        <h2>Our Benefits</h2>
+        <div class="benefits-card">
+            <div class="row">
+                <div class="col-md-4 benefit-box">
+                    <img src="/frontend/static/images/firsttt.jpg" alt="Best Products" class="benefit-image">
+                    <h5>🌟 Best Products</h5>
+                    <p>We offer the highest quality skincare products sourced from the best brands.</p>
+                </div>
+                <div class="col-md-4 benefit-box">
+                    <img src="/frontend/static/images/second.jpg" alt="Free Shipping" class="benefit-image">
+                    <h5>🚚 Free Shipping</h5>
+                    <p>Enjoy free shipping on all orders, no matter the size or location.</p>
+                </div>
+                <div class="col-md-4 benefit-box">
+                    <img src="/frontend/static/images/third.jpg" alt="Guarantee" class="benefit-image">
+                    <h5>✅ Guarantee</h5>
+                    <p>We provide a satisfaction guarantee for all products we sell.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+   <!-- Modal for Product 1 -->
+<div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel1">Moisturizing Cream</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/frontend/static/images/moistcreaam (2).jpg" class="img-fluid mb-3" alt="Product 1">
+                <p>Price: $85</p>
+                <p>Unlock smooth, radiant skin with our ultra-hydrating Moisturizing Cream. Infused with nourishing ingredients, it deeply hydrates and revitalizes, leaving your skin soft, supple, and glowing all day long. Perfect for all skin types feel the difference with every use.</p>
+
+                <!-- Form -->
+                <form id="form1">
+                    <div class="mb-3">
+                        <label for="name1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message1" class="form-label">Message</label>
+                        <textarea class="form-control" id="message1" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <!-- Success Notification -->
+                <div id="notification1" class="alert alert-success mt-3" style="display: none;">
+                    Your message has been successfully sent!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Product 2 -->
+<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel2">Vitamin C Serum</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/frontend/static/images/vitaminc.jpg" class="img-fluid mb-3" alt="Product 2">
+                <p>Price: $60</p>
+                <p>Brighten and renew your skin with our Vitamin C Serum. Packed with powerful antioxidants, it helps reduce dark spots, even out skin tone, and boost radiance. Reveal a youthful glow and smoother complexion with every drop!</p>
+                
+            
+
+                <!-- Form -->
+                <form id="form2">
+                    <div class="mb-3">
+                        <label for="name2" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name2" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email2" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email2" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message2" class="form-label">Message</label>
+                        <textarea class="form-control" id="message2" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <!-- Success Notification -->
+                <div id="notification2" class="alert alert-success mt-3" style="display: none;">
+                    Your message has been successfully sent!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Product 3 -->
+<div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel3">Sunscreen SPF 50</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/frontend/static/images/sunskren.jpg" class="img-fluid mb-3" alt="Product 3">
+                <p>Price: $45</p>
+                <p>Protect your skin with our SPF 50 Sunscreen. Designed to shield against harmful UVA and UVB rays, it provides broad-spectrum defense while keeping your skin hydrated and refreshed. Stay safe, stay radiant, all day long!</p>
+
+                <!-- Form -->
+                <form id="form3">
+                    <div class="mb-3">
+                        <label for="name3" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name3" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email3" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email3" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message3" class="form-label">Message</label>
+                        <textarea class="form-control" id="message3" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <!-- Success Notification -->
+                <div id="notification3" class="alert alert-success mt-3" style="display: none;">
+                    Your message has been successfully sent!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Product 4 -->
+<div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel4">Hydrating Face Mask</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/frontend/static/images/antiage.jpg" class="img-fluid mb-3" alt="Product 4">
+                <p>Price: $95</p>
+                <p>Turn back time with our Anti-Aging Cream. Formulated with powerful ingredients, it targets fine lines, wrinkles, and sagging, promoting smoother, firmer skin. Reveal a youthful, glowing complexion and enjoy ageless beauty every day!</p>
+
+                <!-- Form -->
+                <form id="form4">
+                    <div class="mb-3">
+                        <label for="name4" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name4" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email4" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message4" class="form-label">Message</label>
+                        <textarea class="form-control" id="message4" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <!-- Success Notification -->
+                <div id="notification4" class="alert alert-success mt-3" style="display: none;">
+                    Your message has been successfully sent!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Product 5 -->
+<div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel5" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel5">Anti-Aging Serum</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/frontend/static/images/acne.jpg" class="img-fluid mb-3" alt="Product 5">
+                <p>Price: $48</p>
+                <p>Clear up your skin with our Acne Treatment Gel. Formulated to target blemishes, reduce inflammation, and prevent breakouts, it helps you achieve a smoother, clearer complexion. Say goodbye to acne, and hello to confidence!</p>
+
+                <!-- Form -->
+                <form id="form5">
+                    <div class="mb-3">
+                        <label for="name5" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name5" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email5" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email5" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message5" class="form-label">Message</label>
+                        <textarea class="form-control" id="message5" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <!-- Success Notification -->
+                <div id="notification5" class="alert alert-success mt-3" style="display: none;">
+                    Your message has been successfully sent!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Product 6 -->
+<div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel6" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel6">Refreshing Toner</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/frontend/static/images/mask.jpg" class="img-fluid mb-3" alt="Product 6">
+                <p>Price: $15</p>
+                <p>Revitalize your skin with our Hydrating Face Mask. Infused with moisture-boosting ingredients, it deeply nourishes and replenishes, leaving your skin soft, plump, and refreshed. Perfect for a quick hydration boost anytime your skin needs a little TLC</p>
+
+                <!-- Form -->
+                <form id="form6">
+                    <div class="mb-3">
+                        <label for="name6" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name6" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email6" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email6" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message6" class="form-label">Message</label>
+                        <textarea class="form-control" id="message6" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <!-- Success Notification -->
+                <div id="notification6" class="alert alert-success mt-3" style="display: none;">
+                    Your message has been successfully sent!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Product 7 -->
+<div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModalLabel7" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel7">Gentle Scrub</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/frontend/static/images/oil.jpg" class="img-fluid mb-3" alt="Product 7">
+                <p>Price: $42</p>
+                <p>Give your skin the ultimate boost with our Nourishing Oil. Packed with rich, natural oils, it deeply hydrates, restores, and softens, leaving your skin feeling smooth, glowing, and radiant. Perfect for all skin types, it’s your go-to for a healthy, luminous complexion!</p>
+
+                <!-- Form -->
+                <form id="form7">
+                    <div class="mb-3">
+                        <label for="name7" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name7" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email7" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email7" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message7" class="form-label">Message</label>
+                        <textarea class="form-control" id="message7" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <!-- Success Notification -->
+                <div id="notification7" class="alert alert-success mt-3" style="display: none;">
+                    Your message has been successfully sent!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Product 8 -->
+<div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel8" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel8">Clarifying Serum</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/frontend/static/images/scruub.jpg" class="img-fluid mb-3" alt="Product 8">
+                <p>Price: $50</p>
+                <p>Reveal smoother, brighter skin with our Exfoliating Scrub. Gently sloughs away dead skin cells, unclogs pores, and promotes a fresh, radiant complexion. Perfect for all skin types, it leaves your face feeling clean, soft, and renewed!</p>
+
+                <!-- Form -->
+                <form id="form8">
+                    <div class="mb-3">
+                        <label for="name8" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name8" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email8" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email8" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message8" class="form-label">Message</label>
+                        <textarea class="form-control" id="message8" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <!-- Success Notification -->
+                <div id="notification8" class="alert alert-success mt-3" style="display: none;">
+                    Your message has been successfully sent!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Product 9 -->
+<div class="modal fade" id="productModal9" tabindex="-1" aria-labelledby="productModalLabel9" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel9">Nourishing Eye Cream</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/frontend/static/images/brightening.jpg" class="img-fluid mb-3" alt="Product 9">
+                <p>Price: $45</p>
+                <p>Glow like never before with our Brightening Face Cream. Formulated to even skin tone, reduce dark spots, and enhance radiance, it leaves your complexion luminous and refreshed. Perfect for a brighter, more youthful-looking you!</p>
+
+                <!-- Form -->
+                <form id="form9">
+                    <div class="mb-3">
+                        <label for="name9" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name9" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email9" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email9" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message9" class="form-label">Message</label>
+                        <textarea class="form-control" id="message9" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <!-- Success Notification -->
+                <div id="notification9" class="alert alert-success mt-3" style="display: none;"></div>
+                    Your message has been successfully sent!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2025 Skincare Marketplace. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            for (let i = 1; i <= 9; i++) {
+                const form = document.getElementById(`form${i}`);
+                const notification = document.getElementById(`notification${i}`);
+    
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent actual form submission
+                    notification.style.display = "block"; // Show success message
+    
+                    setTimeout(() => {
+                        notification.style.display = "none"; // Hide after 5 seconds
+                        form.reset(); // Clear form fields
+                    }, 5000);
+                });
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    // Function to smooth scroll to the section without hiding others
+    function navigateTo(event, sectionId) {
+        event.preventDefault();
+
+        // Scroll to the target section smoothly
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start' // Scroll to the top of the section
+            });
+        }
+
+        // Close mobile navbar if open
+        if (navbarCollapse.classList.contains("show")) {
+            new bootstrap.Collapse(navbarCollapse).hide();
+        }
+
+        // Update URL hash
+        history.pushState(null, null, `#${sectionId}`);
+    }
+
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Attach event listener to the "DermaHeaven" text for scrolling to the top
+    const logoText = document.querySelector('.navbar-brand');
+    if (logoText) {
+        logoText.addEventListener('click', function () {
+            scrollToTop(); // Scroll to the top when the text is clicked
+            if (navbarCollapse.classList.contains("show")) {
+                new bootstrap.Collapse(navbarCollapse).hide();
+            }
+        });
+    }
+
+    // Attach event listeners to nav links for smooth scroll navigation
+    const navLinks = document.querySelectorAll('a.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            const sectionId = link.getAttribute('href').substring(1);
+            navigateTo(event, sectionId);
+        });
+    });
+
+    // Optional: Handle browser hash change (e.g., when users navigate via the back/forward buttons)
+    window.addEventListener('hashchange', function () {
+        const sectionId = window.location.hash.substring(1);
+        if (sectionId) {
+            navigateTo(event, sectionId);
+        }
+    });
+});
+
+    </script>
+    
+    <!-- About Section -->
+<section id="about" class="container text-center page-section">
+    <div class="row">
+        <div class="col-lg-6">
+            <!-- About Card -->
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="display-4">About DermaHeaven</h2>
+                    <p class="lead">
+                        At DermaHeaven, we believe that skincare should be personalized, accessible, and empowering. Our marketplace offers a wide range of carefully curated skincare products to help you achieve healthy, radiant skin. Whether you're looking for cleansers, moisturizers, serums, or treatments, we are committed to bringing you the best in skincare innovation.
+                    </p>
+                    <p>
+                        Our mission is to connect you with products that meet your unique skin needs, offering guidance and expertise along the way. We are more than just a marketplace; we are your skincare partner, dedicated to helping you find your path to glowing skin.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img src="/frontend/static/images/skincare (1).jpg" alt="About DermaHeaven" class="img-fluid rounded">
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container text-center page-section">
+    <div class="row">
+        <div class="col">
+            <!-- Contact Card -->
+            <div class="card">
+                <div class="card-body">
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Email:</strong> <a href="mailto:support@dermaheaven.com">support@dermaheaven.com</a></li>
+                        <li><strong>Phone:</strong> +387 621234567</li>
+                        <li><strong>Address:</strong> 123 Skincare Ave, Beauty City, BC 12345</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
