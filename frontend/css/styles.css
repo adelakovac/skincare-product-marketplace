@@ -1,0 +1,278 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body background color and font family */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Hero section style */
+.hero {
+    background: url('/frontend/static/images/photo1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+/* Navbar customization */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-toggler-icon {
+    background-color: #007bff;
+}
+
+/* Section and content styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Featured product cards */
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #147b44;
+    border-color: #147b44;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.btn-shop {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    color: rgb(7, 83, 30);
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn-shop:hover {
+    background-color: #ffffff;
+}
+.discount-box span {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.discount-container-box {
+    border: 2px solid rgb(102, 98, 98);
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+}
+.discount-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.benefits-container {
+    padding: 50px 20px;
+    text-align: center;
+}
+.benefits-card {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+.benefit-box {
+    padding: 1px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+}
+.benefit-image {
+    width: 80%; /* or a specific width like 150px */
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Space between image and text */
+}
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Section */
+#about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#about .card {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#about .card-body {
+    background-color: #f8f9fa;
+    padding: 30px;
+}
+
+#about h2 {
+    color: #08642c; /* Light teal color */
+    font-weight: 700;
+}
+
+#about .lead {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#about p {
+    color: #555;
+}
+
+/* Image Styling for About Section */
+#about .col-lg-6 img {
+    width: 85%;  /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px;  /* Apply rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow around the image */
+    margin-top: 20px; /* Add some space above the image */
+}
+
+/* Contact Section */
+#contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contact .card {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#contact .card-body {
+    background-color: #f8f9fa;
+    padding: 30px;
+}
+
+#contact h3 {
+    color: #085e1c; /* Warm orange color */
+    font-weight: 700;
+}
+
+#contact ul li {
+    font-size: 1rem;
+    color: #333;
+}
+
+#contact a {
+    color: #2a9d8f; /* Light teal for links */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about .col-lg-6, #contact .col {
+        margin-bottom: 20px;
+    }
+}
+
