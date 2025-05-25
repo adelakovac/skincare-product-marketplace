@@ -1,49 +1,67 @@
 <?php
-header('Content-Type: application/json');
+require_once __DIR__ . '/../services/userService.php';
 
-require_once __DIR__ . '/../services/UserService.php';
-$service = new UserService();
+class UserController {
+    private $service;
 
-switch ($_SERVER['REQUEST_METHOD']) {
-    case 'GET':
-        if (isset($_GET['id'])) {
-            echo json_encode($service->getById($_GET['id']));
-        } else {
-            echo json_encode($service->getAll());
+    public function __construct() {
+        $this->service = new UserService();
+    }
+
+    public function register() {
+        $data = Flight::request()->data->getData();
+
+        // Simple validation
+        if (!isset($data['name'], $data['email'], $data['password'])) {
+            Flight::json(['error' => 'Name, email and password are required'], 400);
+            return;
         }
-        break;
 
-    case 'POST':
-        $data = json_decode(file_get_contents("php://input"), true);
-        if (isset($data['name'], $data['email'])) {
-            $id = $service->create($data['name'], $data['email']);
-            echo json_encode(["success" => true, "id" => $id]);
-        } else {
-            echo json_encode(["error" => "Missing required fields"]);
+        $existingUser = $this->service->getByEmail($data['email']);
+        if ($existingUser) {
+            Flight::json(['error' => 'Email already registered'], 409);
+            return;
         }
-        break;
 
-    case 'PUT':
-    case 'PATCH':
-        $data = json_decode(file_get_contents("php://input"), true);
-        if (isset($data['id'], $data['name'], $data['email'])) {
-            $success = $service->update($data['id'], $data['name'], $data['email']);
-            echo json_encode(["success" => $success]);
+        $userId = $this->service->register($data);
+
+        if ($userId) {
+            Flight::json(['message' => 'User registered successfully', 'id' => $userId], 201);
         } else {
-            echo json_encode(["error" => "Missing data for update"]);
+            Flight::json(['error' => 'Registration failed'], 500);
         }
-        break;
+    }
 
-    case 'DELETE':
-        if (isset($_GET['id'])) {
-            $success = $service->delete($_GET['id']);
-            echo json_encode(["success" => $success]);
-        } else {
-            echo json_encode(["error" => "Missing ID"]);
+    public function login() {
+        $data = Flight::request()->data->getData();
+
+        if (!isset($data['email'], $data['password'])) {
+            Flight::json(['error' => 'Email and password are required'], 400);
+            return;
         }
-        break;
 
-    default:
-        echo json_encode(["error" => "Unsupported method"]);
+        $user = $this->service->getByEmail($data['email']);
+
+        if (!$user || !password_verify($data['password'], $user['password'])) {
+            Flight::json(['error' => 'Invalid email or password'], 401);
+            return;
+        }
+
+        session_start();
+        // Save user info in session except password
+        unset($user['password']);
+        $_SESSION['user'] = $user;
+
+        Flight::json(['message' => 'Login successful', 'user' => $user]);
+    }
+
+    public function logout() {
+        session_start();
+        session_destroy();
+        Flight::json(['message' => 'Logged out']);
+    }
+
+    // Other user CRUD methods here...
 }
 ?>
+
